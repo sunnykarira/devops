@@ -1,0 +1,40 @@
+Code is stored in repo and pushed to puppet master and the deployed from puppet master to all servers.
+
+
+Pull Model Centralized Configuration Management
+
+Every node in the infra runs an agent(client) which is responsible for pulling the Configuration
+from master server.
+
+Pull vs Push Model
+Pull Model ->
+Flexible
+Scalable -> PUll model is descentralized ( ansible uses push model and is not scalable).
+Decentalized
+
+Disadvantage of pull model
+If you want to update in a certain sequence like first webserver the load balancer etc. etc. then this 
+is not strarightforward.
+
+
+Convergence and Idempotence toward automation
+All the tools chef puppet try to converge to desired state. (add, skip, sendpass).
+we don't have to explicitly write scripts for each state.
+All we need to care about only the desired state.
+
+Code vs Data - Creating Dynamic Configurations
+Ability to seperate code from the data.
+that is the environment vars and the upstart scripts are different, which means you
+can define the install version yourself in data part
+
+
+In Chef Properties come from -> data bags, attributes
+Code resides in -> Recipes, Templates
+
+In Puppet Properties come from -> parameters, hiera
+Code resides in -> Modules, Templates
+
+This means your code becomes generic/reusable.
+
+Chef -> ChefSuperMarket
+Puppet -> PuppetForge

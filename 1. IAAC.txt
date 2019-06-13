@@ -1,0 +1,44 @@
+Four Approaches to Manage Infrastructure
+
+application , environment, hardware etc. etc.
+
+How to manage in most effective way
+
+LIFECYCLE EVENTS (Phases of the infrastructure)
+
+
+We have some servers.
+we install OS on the servers.
+We configure the environment.
+Deploy the application.
+Integrate the applications (talk with databases).
+Update patch
+Tear down the infra.
+
+
+APPROACHES
+
+Manual
+Scripts
+Golden Images (Templates)
+Iaac
+
+
+Scripts VS Iaac (procedural vs declerative)
+
+Scripts => Automate repetable tasks , procedural program, focus on how. (construction worker)
+
+IAAC => We write DSL (domain specific language, abstracted language) and then the providers take care of it ,focuses on what. (Architect)
+declerative approach, revision control, code review, automation etc.
+Recreate the infra on other server.
+Migration and Disaster Recovery is good.
+Absolute Consistency.
+
+
+
+WHAT IS IAAC?
+
+Ability to describe the state of the infra.
+Consistent provisioning and config of env.
+repetable, Flexible and automable
+Treat it similar to application code

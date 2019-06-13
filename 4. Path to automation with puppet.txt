@@ -1,0 +1,33 @@
+We keep in mind the end state of the infra everytime with puppet.
+For ex.
+Load Balancers
+Web Servers
+Databases
+
+
+
+
+Mapping the  application run with puppet resources
+
+Install package  => Package
+Create Config file => File
+Start Service => Service
+Create Web Page => File 
+
+Package may have version, latest
+Config File may have source, ownership, permissions
+Service may have state.
+Web Page  may have source, ownership, permissions
+
+
+Manifest => A collection of resources written with a specific objective in mind.
+R1, R2, R3
+They are core logic
+Files =>
+Templates
+
+
+Modules => A package which contains manifest, files and templates which automates the application.
+
+nodes.pp => It defines which node will use which version.
+

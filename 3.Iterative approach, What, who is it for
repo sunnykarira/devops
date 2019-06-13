@@ -1,0 +1,25 @@
+Where to use chef / puppet?
+
+Infra lifecycle
+
+Build/Provision -> terraform, cloud, provisioner, razor
+Install OS -> Images
+
+
+Configure Env
+Deploy
+update/patch 
+Change management /Integrate
+Audit and Compilance
+Software Delivery -> VM's with puppet code.
+Chef / Puppet are good here.
+
+Who is it for?
+
+
+Sys Admin
+Application Ops/ Devops
+Build And Release Eng
+Network engineer
+Storage Admin
+Developer
